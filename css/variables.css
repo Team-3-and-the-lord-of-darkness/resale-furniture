@@ -7,27 +7,44 @@ og kan universelt ændres */
   --prime-color: rgb(257, 257, 257);
   --second-color: rgb(257, 257, 257);
   --third-color: rgb(257, 257, 257);
+  /* var står her for variation, 
+  så vi kan have nuance forskelle på vores farverne,
+  f.eks til en mørkere baggrund */
+  --prime-color-var: rgb(257, 257, 257);
+  --second-color-var: rgb(257, 257, 257);
+  --third-color-var: rgb(257, 257, 257);
+
+  /* borders */
+  --general-border: ;
+  --nav-border: ;
+  --cards-border: ;
 
   /* border radius */
+  --general-margin: ;
   --cards-corner: 1px;
 
-  /* tekststørrelse og -farve */
+  /* tekststørrelse*/
   --h1-size: ;
   --h2-size: ;
   --h3-size: ;
   --h4-size: ;
   --p-size: ;
-  --h1-color: ;
-  --h2-color: ;
-  --h3-color: ;
-  --h4-color: ;
-  --p-color: ;
+
+  /* Tekstfarve */
+  --h1-color: #000;
+  --h2-color: #000;
+  --h3-color: #000;
+  --h4-color: #000;
+  --p-color: #000;
 
   /* fonts */
   --h1-font: ;
   --h2-font: ;
   --h3-font: ;
   --h4-font: ;
-  --p-font:   
-;
+  --p-font: ;
+
+  /* margener */
+  --general-margin: ;
+  --cards-margin: ;
 }
