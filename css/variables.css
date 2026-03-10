@@ -1,0 +1,33 @@
+/* Denne side indeholder variabler.Det vil sige,
+at gennemgående æstetiske valg (farve, border-radius, etc) findes herinde,
+og kan universelt ændres */
+
+:root {
+  /* farver */
+  --prime-color: rgb(257, 257, 257);
+  --second-color: rgb(257, 257, 257);
+  --third-color: rgb(257, 257, 257);
+
+  /* border radius */
+  --cards-corner: 1px;
+
+  /* tekststørrelse og -farve */
+  --h1-size: ;
+  --h2-size: ;
+  --h3-size: ;
+  --h4-size: ;
+  --p-size: ;
+  --h1-color: ;
+  --h2-color: ;
+  --h3-color: ;
+  --h4-color: ;
+  --p-color: ;
+
+  /* fonts */
+  --h1-font: ;
+  --h2-font: ;
+  --h3-font: ;
+  --h4-font: ;
+  --p-font:   
+;
+}
