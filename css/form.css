@@ -1,0 +1,96 @@
+/* =============================================
+   SIGNUP SECTION — form.html
+   Requires: variables.css + global.css
+   ============================================= */
+
+.signup-section {
+  padding: 80px 60px;
+  max-width: 960px;
+}
+
+.signup-section .signup-heading {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 6px 0;
+  line-height: 1.6;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 480px;
+  margin-top: 48px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"] {
+  width: 100%;
+  padding: 16px 18px;
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  border: 1px solid #000;
+  border-radius: var(--cards-corner);
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.signup-form input::placeholder {
+  color: #888;
+  font-family: var(--p-font);
+  font-size: var(--p-size);
+}
+
+.signup-form input:focus {
+  border-color: #555;
+}
+
+.signup-form .email-row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.signup-form .email-row input[type="email"] {
+  flex: 1;
+}
+
+.signup-form .subscribe-btn {
+  padding: 16px 24px;
+  background-color: #b8d4e8;
+  color: var(--p-color);
+  font-family: var(--p-font);
+  font-size: var(--p-size);
+  border: solid #000 1px;
+  border-radius: var(--cards-corner);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.signup-form .subscribe-btn:hover {
+  background-color: #a0c0d8;
+}
+
+.signup-form select {
+  width: 100%;
+  padding: 16px 18px;
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  border: 1px solid #000;
+  border-radius: var(--cards-corner);
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+  appearance: none; /* removes default browser styling */
+  cursor: pointer;
+}
+
+.signup-form select:focus {
+  border-color: #555;
+}
