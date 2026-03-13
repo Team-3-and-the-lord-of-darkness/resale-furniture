@@ -33,6 +33,68 @@ p {
    HEADER
    Requires: variables.css + global.css
    ============================================= */
+<<<<<<< HEAD
+=======
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #000;
+}
+
+header .rewind {
+  height: 40px;
+  width: auto;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.headerText {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.headerText:hover {
+  text-decoration: underline;
+}
+.header-icon {
+  color: var(--p-color);
+  display: flex;
+  align-items: center;
+}
+
+.header-icon:hover {
+  opacity: 0.6;
+}
+/* Skjuler nav-tekst på index-siden */
+.header-minimal .headerText {
+  display: none;
+}
+
+.rewind {
+  width: 50%;
+}
+>>>>>>> 5aecee1a136a6f8786ec94c80b3e14533ebf8b20
 
 header {
   display: flex;
