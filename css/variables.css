@@ -24,11 +24,11 @@ og kan universelt ændres */
   --cards-corner: 1px;
 
   /* tekststørrelse*/
-  --h1-size: ;
-  --h2-size: ;
-  --h3-size: ;
-  --h4-size: ;
-  --p-size: ;
+  --h1-size: 40px;
+  --h2-size: 40px;
+  --h3-size: 60px;
+  --h4-size: 20px;
+  --p-size: 16px;
 
   /* Tekstfarve */
   --h1-color: #000;
@@ -38,10 +38,9 @@ og kan universelt ændres */
   --p-color: #000;
 
   /* fonts */
-  --h1-font: ;
-  --h2-font: ;
-  --h3-font: ;
-  --h4-font: ;
-  --p-font:    
-;
+  --h1-font: "Arial", sans-serif;
+  --h2-font: "Arial", sans-serif;
+  --h3-font: "Arial", sans-serif;
+  --h4-font: "Arial", sans-serif;
+  --p-font: "Arial", sans-serif;
 }
