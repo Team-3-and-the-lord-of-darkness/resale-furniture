@@ -33,8 +33,6 @@ p {
    HEADER
    Requires: variables.css + global.css
    ============================================= */
-<<<<<<< HEAD
-=======
 
 header {
   display: flex;
@@ -94,7 +92,6 @@ header nav ul li {
 .rewind {
   width: 50%;
 }
->>>>>>> 5aecee1a136a6f8786ec94c80b3e14533ebf8b20
 
 header {
   display: flex;
