@@ -2,6 +2,11 @@
 at gennemgående æstetiske valg (farve, border-radius, etc) findes herinde,
 og kan universelt ændres */
 
+@font-face {
+  font-family: "interSemibold";
+  src: url("../fonts/Inter_18pt-SemiBold.woff");
+}
+
 :root {
   /* farver */
   --prime-color: rgb(257, 257, 257);
@@ -38,10 +43,9 @@ og kan universelt ændres */
   --p-color: #000;
 
   /* fonts */
-  --h1-font: ;
-  --h2-font: ;
-  --h3-font: ;
-  --h4-font: ;
-  --p-font:        
-;
+  --h1-font: "interSemibold";
+  --h2-font: "interSemibold";
+  --h3-font: "interSemibold";
+  --h4-font: "interSemibold";
+  --p-font: "interSemibold";
 }
