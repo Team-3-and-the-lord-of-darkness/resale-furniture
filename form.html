@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/form.css" />
   </head>
   <body>
     <header>
@@ -16,6 +19,27 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="signup-section">
+        <p class="signup-heading">Wanna be the first to know about new drops and sale?</p>
+        <p class="signup-heading">Sign up for our newsletter here</p>
+
+        <div class="signup-form">
+          <select name="category" id="category">
+            <option value="" disabled selected>choose your desired category</option>
+            <option value="Womens">women's apparel</option>
+            <option value="Mens">men's apparel</option>
+            <option value="Home">home</option>
+            <option value="All">all</option>
+          </select>
+
+          <div class="email-row">
+            <input type="email" placeholder="your email adress" />
+            <button class="subscribe-btn">subsribe</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div>
         <div>
