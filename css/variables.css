@@ -38,9 +38,10 @@ og kan universelt ændres */
   --p-color: #000;
 
   /* fonts */
-  --h1-font: "Arial", sans-serif;
-  --h2-font: "Arial", sans-serif;
-  --h3-font: "Arial", sans-serif;
-  --h4-font: "Arial", sans-serif;
-  --p-font: "Arial", sans-serif;
+  --h1-font: ;
+  --h2-font: ;
+  --h3-font: ;
+  --h4-font: ;
+  --p-font:        
+;
 }
