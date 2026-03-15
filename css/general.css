@@ -24,10 +24,15 @@ h4 {
   font-family: var(--h4-font);
 }
 
-p {
+p,
+a {
   font-size: var(--p-size);
   color: var(--p-color);
   font-family: var(--p-font);
+}
+
+a {
+  text-decoration: none;
 }
 /* =============================================
    HEADER
@@ -39,7 +44,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  border-bottom: 1px solid #000;
+  border-bottom: var(--header-border);
 }
 
 header .rewind {

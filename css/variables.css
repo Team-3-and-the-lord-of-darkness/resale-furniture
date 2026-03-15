@@ -7,6 +7,11 @@ og kan universelt ændres */
   src: url("../fonts/Inter_18pt-SemiBold.woff");
 }
 
+@font-face {
+  font-family: "interRegular";
+  src: url("../fonts/Inter_18pt-Regular.woff");
+}
+
 :root {
   /* farver */
   --prime-color: rgb(257, 257, 257);
@@ -23,6 +28,7 @@ og kan universelt ændres */
   --general-border: ;
   --nav-border: ;
   --cards-border: ;
+  --header-border: 1px solid black;
 
   /* border radius */
   --general-margin: ;
@@ -47,5 +53,5 @@ og kan universelt ændres */
   --h2-font: "interSemibold";
   --h3-font: "interSemibold";
   --h4-font: "interSemibold";
-  --p-font: "interSemibold";
+  --p-font: "interRegular";
 }
