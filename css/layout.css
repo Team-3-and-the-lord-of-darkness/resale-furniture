@@ -10,3 +10,14 @@ og hvordan de interagerer med hinanden. */
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+.hero {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
