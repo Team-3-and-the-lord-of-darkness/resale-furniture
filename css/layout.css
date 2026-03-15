@@ -1,2 +1,12 @@
 /* denne side er forbeholdt layout, altså hvordan elementerne er placeret på siden,
 og hvordan de interagerer med hinanden. */
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.categoryTitle {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}

@@ -14,9 +14,9 @@ og kan universelt ændres */
 
 :root {
   /* farver */
-  --prime-color: rgb(257, 257, 257);
-  --second-color: rgb(257, 257, 257);
-  --third-color: rgb(257, 257, 257);
+  --green-pastel: #cdf4d3;
+  --yellow-pastel: #f5e8ba;
+  --purple-pastel: #c8caff;
   /* var står her for variation, 
   så vi kan have nuance forskelle på vores farverne,
   f.eks til en mørkere baggrund */
@@ -28,7 +28,7 @@ og kan universelt ændres */
   --general-border: ;
   --nav-border: ;
   --cards-border: ;
-  --header-border: 1px solid black;
+  --header-border: 2px solid black;
 
   /* border radius */
   --general-margin: ;
@@ -36,7 +36,7 @@ og kan universelt ændres */
 
   /* tekststørrelse*/
   --h1-size: 40px;
-  --h2-size: 40px;
+  --h2-size: 26px;
   --h3-size: 60px;
   --h4-size: 20px;
   --p-size: 16px;
