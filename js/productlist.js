@@ -1,54 +1,53 @@
 "use strict";
 const params = new URLSearchParams(window.location.search);
-let category = params.get("category") ?? "Home";
+let category = params.get("category");
 
-let leData;
+let heroImage = document.querySelector("#heroImage");
 
-// document.querySelector(".asc").addEventListener("click", klikSorterAsc);
-// document.querySelector(".des").addEventListener("click", klikSorterDes);
-// function klikSorterAsc(evt) {
-//   console.log("KLIK SORTER", evt.target.dataset.direction);
-//   leData.sort(function (a, b) {
-//     return a.realPrice - b.realPrice;
-//   });
-//   showProducts(leData);
-// }
-// function klikSorterDes(evt) {
-//   console.log("KLIK SORTER", evt.target.dataset.direction);
-//   leData.sort(function (a, b) {
-//     return b.realPrice - a.realPrice;
-//   });
-//   showProducts(leData);
-// }
+if (category === "womens-dresses" || category === "womens-shoes" || category === "womens-watches") {
+  heroImage.src = "../img/womenswearhero.webp";
+} else if (category === "mens-shirts" || category === "mens-shoes" || category === "mens-watches") {
+  heroImage.src = "../img/menswearhero.webp";
+} else if (category === "furniture") {
+  heroImage.src = "../img/homeinteriorhero.webp";
+}
 
-fetch(`https://dummyjson.com/products?category=${category}&limit=10`)
+//======================================================================================================================
+
+fetch(`https://dummyjson.com/products/category/${category}?limit=10`)
   .then((response) => response.json())
   .then((data) => {
-    if (product.discountPercentage) data.realPrice = Math.ceil(product.price - (product.price / 100) * product.discountPercentage);
-    data.forEach((product) => {
+    console.log(data);
+    if (data.discountPercentage) data.realPrice = Math.ceil(data.price - (data.price / 100) * data.discountPercentage);
+    data.products.forEach((product) => {
       if (product.discount) {
         product.realPrice = Math.ceil(product.price - (product.price / 100) * product.discountPercentage);
       } else {
         product.realPrice = product.price;
       }
     });
-    leData = data;
 
-    showProducts(leData);
+    showProducts(data);
   });
 
-// husk at sætte class eller id til her!
-// const productContainer = document.querySelector();
+const productContainer = document.querySelector(".productContainer");
 
 function showProducts(productsArr) {
-  // console.log("productsArr", productsArr);
-  document.querySelector("#heading").innerHTML = `<h1>${category}</h1>`;
-  productContainer.innerHTML = "";
+  console.log("productsArr", productsArr);
+  heroImage.innerHTML = `<h1>${category}</h1>`;
 
-  productsArr.forEach((product) => {
+  productsArr.products.forEach((product) => {
     console.log("product", product.id);
 
-    // sæt hardcode html her i:
-    productContainer.innerHTML += ``;
+    productContainer.innerHTML += `
+
+            <div class="card pastelhover">
+              <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
+              <p class="price">${product.price} DKK</p>
+              <p class="productInfo">${product.title}</p>
+              <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
+            </div>
+      
+      `;
   });
 }

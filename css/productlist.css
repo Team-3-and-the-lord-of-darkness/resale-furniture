@@ -4,6 +4,16 @@
   padding: 5px;
 }
 
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#heroImage {
+  width: 100%;
+  margin: 0.5rem;
+}
+
 .card img {
   border: var(--header-border);
   width: 100%;
