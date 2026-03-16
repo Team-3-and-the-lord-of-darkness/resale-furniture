@@ -62,7 +62,7 @@
 
 .signup-form .subscribe-btn {
   padding: 16px 24px;
-  background-color: #b8d4e8;
+  background-color: #80c8ffc9;
   color: var(--p-color);
   font-family: var(--p-font);
   font-size: var(--p-size);
@@ -73,7 +73,7 @@
 }
 
 .signup-form .subscribe-btn:hover {
-  background-color: #a0c0d8;
+  background-color: #80c8ffa0;
 }
 
 .signup-form select {
