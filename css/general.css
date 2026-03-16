@@ -1,5 +1,6 @@
 /* Den her css-side er tiltænkt elementer, 
 der er gennemgående på tværs af HTML-siderne */
+
 h1 {
   font-size: var(--h1-size);
   color: var(--h1-color);
