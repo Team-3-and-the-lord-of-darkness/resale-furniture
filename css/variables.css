@@ -2,11 +2,21 @@
 at gennemgående æstetiske valg (farve, border-radius, etc) findes herinde,
 og kan universelt ændres */
 
+@font-face {
+  font-family: "interSemibold";
+  src: url("../fonts/Inter_18pt-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "interRegular";
+  src: url("../fonts/Inter_18pt-Regular.woff");
+}
+
 :root {
   /* farver */
-  --prime-color: rgb(257, 257, 257);
-  --second-color: rgb(257, 257, 257);
-  --third-color: rgb(257, 257, 257);
+  --green-pastel: #cdf4d3;
+  --yellow-pastel: #f5e8ba;
+  --purple-pastel: #c8caff;
   /* var står her for variation, 
   så vi kan have nuance forskelle på vores farverne,
   f.eks til en mørkere baggrund */
@@ -18,6 +28,7 @@ og kan universelt ændres */
   --general-border: ;
   --nav-border: ;
   --cards-border: ;
+  --header-border: 2px solid black;
 
   /* border radius */
   --general-margin: ;
@@ -25,7 +36,7 @@ og kan universelt ændres */
 
   /* tekststørrelse*/
   --h1-size: 40px;
-  --h2-size: 40px;
+  --h2-size: 26px;
   --h3-size: 60px;
   --h4-size: 20px;
   --p-size: 16px;
@@ -38,9 +49,9 @@ og kan universelt ændres */
   --p-color: #000;
 
   /* fonts */
-  --h1-font: "Arial", sans-serif;
-  --h2-font: "Arial", sans-serif;
-  --h3-font: "Arial", sans-serif;
-  --h4-font: "Arial", sans-serif;
-  --p-font: "Arial", sans-serif;
+  --h1-font: "interSemibold";
+  --h2-font: "interSemibold";
+  --h3-font: "interSemibold";
+  --h4-font: "interSemibold";
+  --p-font: "interRegular";
 }

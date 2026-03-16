@@ -1,5 +1,6 @@
 /* Den her css-side er tiltænkt elementer, 
 der er gennemgående på tværs af HTML-siderne */
+
 h1 {
   font-size: var(--h1-size);
   color: var(--h1-color);
@@ -24,8 +25,168 @@ h4 {
   font-family: var(--h4-font);
 }
 
-p {
+p,
+a {
   font-size: var(--p-size);
   color: var(--p-color);
   font-family: var(--p-font);
+}
+
+a {
+  text-decoration: none;
+}
+/* =============================================
+   HEADER
+   Requires: variables.css + global.css
+   ============================================= */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: var(--header-border);
+}
+
+header .rewind {
+  height: 40px;
+  width: auto;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.headerText {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.headerText:hover {
+  text-decoration: underline;
+}
+.header-icon {
+  color: var(--p-color);
+  display: flex;
+  align-items: center;
+}
+
+.header-icon:hover {
+  opacity: 0.6;
+}
+/* Skjuler nav-tekst på index-siden */
+.header-minimal .headerText {
+  display: none;
+}
+
+.rewind {
+  width: 50%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #000;
+}
+
+header .rewind {
+  height: 40px;
+  width: auto;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.headerText {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.headerText:hover {
+  text-decoration: underline;
+}
+.header-icon {
+  color: var(--p-color);
+  display: flex;
+  align-items: center;
+}
+
+.header-icon:hover {
+  opacity: 0.6;
+}
+/* Skjuler nav-tekst på index-siden */
+.header-minimal .headerText {
+  display: none;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px 40px;
+  border-top: 1px solid #000;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-link {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-about {
+  margin-top: 20px;
+}
+
+.footer-copy {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  margin: 0;
 }

@@ -3,28 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/form.css" />
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/rewindlogo.webp" alt="rewind logo" /></a>
+      <a href="index.html"><img class="rewind" src="img/rewindlogo.webp" alt="rewind logo" /></a>
       <nav>
         <ul>
-          <li><button>categories</button></li>
-          <li><a href="about.html">about us</a></li>
-          <li><a href="form.html">sign up</a></li>
+          <li><button class="headerText">categories</button></li>
+          <li><a class="headerText" href="about.html">about us</a></li>
+          <li><a class="headerText" href="form.html">join us</a></li>
+          <li>
+            <a href="#" class="header-icon" aria-label="account">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="header-icon" aria-label="cart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
-    <footer>
-      <div>
-        <div>
-          <a href="#">INSTAGRAM</a>
-          <p>&#169;2026 Rewind</p>
+    <main>
+      <section class="signup-section">
+        <p class="signup-heading">Wanna be the first to know about new drops and sale?</p>
+        <p class="signup-heading">Sign up for our newsletter here</p>
+
+        <div class="signup-form">
+          <select name="category" id="category">
+            <option value="" disabled selected>choose your desired category</option>
+            <option value="Womens">women's apparel</option>
+            <option value="Mens">men's apparel</option>
+            <option value="Home">home</option>
+            <option value="All">all</option>
+          </select>
+
+          <div class="email-row">
+            <input type="email" placeholder="your email adress" />
+            <button class="subscribe-btn">subsribe</button>
+          </div>
         </div>
-        <a href="#">CONTACT</a>
-      </div>
-      <a href="about.html">ABOUT US</a>
-    </footer>
+      </section>
+    </main>
+<footer>
+  <div class="footer-left">
+    <a class="footer-link" href="#">Instagram</a>
+    <a class="footer-link" href="#">Contact</a>
+    <a class="footer-link footer-about" href="about.html">About us</a>
+  </div>
+  <p class="footer-copy">©2026 Rewind</p>
+</footer>
   </body>
 </html>
