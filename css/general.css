@@ -152,3 +152,40 @@ header nav ul li {
 .header-minimal .headerText {
   display: none;
 }
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px 40px;
+  border-top: 1px solid #000;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-link {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-about {
+  margin-top: 20px;
+}
+
+.footer-copy {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  margin: 0;
+}
