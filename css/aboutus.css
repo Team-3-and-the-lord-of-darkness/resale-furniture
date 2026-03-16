@@ -1,0 +1,61 @@
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+/* header */
+
+.aboutHero {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 2rem auto 4rem auto;
+}
+
+/* article */
+main article {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+main article h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+main article .italic {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+main article h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+main article p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+/* article */
+
+/* hr linje */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  margin: 2rem auto;
+}
+/* hr linje */
