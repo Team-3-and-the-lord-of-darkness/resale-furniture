@@ -14,7 +14,7 @@ fetch(`https://dummyjson.com/products/${id}`)
           <div>
             <img src="${id.thumbnail}" alt="" />
           </div>
-          <div>
+          <div class="productinfoBox">
             <h1>${id.title}</h1>
             <h1>${id.price}</h1>
             <p class="discountPercentage">${id.discountPercentage}%</p>
