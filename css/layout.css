@@ -40,6 +40,8 @@ body {
 
 body {
   margin: 0;
+}
+
 @media (max-width: 770px) {
   .grid4 {
     display: grid;
