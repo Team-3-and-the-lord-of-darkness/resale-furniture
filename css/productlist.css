@@ -64,6 +64,13 @@
   padding-left: 60px;
 }
 
+.subcategoryLinks a {
+  border-bottom: solid 1px transparent; /* altid der, usynlig */
+}
+
+.subcategoryLinks a:hover {
+  border-bottom-color: #000; /* skifter kun farven */
+}
 @media (max-width: 770px) {
   .productContainer {
     display: grid;
