@@ -70,7 +70,7 @@ main {
 main article {
   max-width: 750px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 80px;
 }
 
 .titleRow {
@@ -111,3 +111,25 @@ hr {
   margin: 2rem auto;
 }
 /* hr linje */
+
+@media (max-width: 770px) {
+  .heroslide {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* or 50vh if mobile should be smaller */
+    overflow: hidden;
+  }
+
+  .heroslide img {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* IMPORTANT */
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    animation: crossfade 16s infinite;
+    animation-timing-function: ease-in-out;
+  }
+}

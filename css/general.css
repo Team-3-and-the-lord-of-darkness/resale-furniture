@@ -210,4 +210,40 @@ footer {
   &:hover {
     background-color: var(--purple-pastel);
   }
+/* dropdown menu */
+.categories-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #000;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.categories-dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-menu a {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  text-decoration: underline;
 }

@@ -38,11 +38,6 @@
   font-family: var(--h3-font);
   color: #a8d9ff;
   text-decoration: none;
-  text-shadow:
-    0.2px 0.2px 0 #ffffff,
-    -0.2px -0.2px 0 #ffffff,
-    0.2px -0.2px 0 #ffffff,
-    -0.2px 0.2px 0 #ffffff;
 }
 
 .hero-categories a {
@@ -73,3 +68,17 @@ img.aboutHero {
   place-content: center;
 }
 
+.indexabout {
+  margin: 50px auto;
+  padding: 50px;
+  width: 1000px;
+}
+
+.blåsofa img {
+  max-width: 70%;
+}
+.blåsofa {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
