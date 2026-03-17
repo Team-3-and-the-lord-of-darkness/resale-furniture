@@ -12,6 +12,6 @@ pastelElements.forEach((element) => {
   });
 });
 
-element.addEventListener("mouseleave", () => {
-  element.classList.remove(...randomPastels);
-});
+// element.addEventListener("mouseleave", () => {
+//   element.classList.remove(...randomPastels);
+// });
