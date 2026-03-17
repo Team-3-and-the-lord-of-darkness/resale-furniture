@@ -36,8 +36,18 @@
 .hero-nav-right a {
   font-size: var(--h3-size);
   font-family: var(--h3-font);
-  color: #a8d9ff;
+  color: rgb(177, 206, 255);
   text-decoration: none;
+  transition: color 0.2s ease;
+    text-shadow:
+    0.3px 0.3px 0 #000000b6,
+    -0.3px -0.3px 0 #000000a0,
+    0.3px -0.3px 0 #000000aa,
+    -0.3px 0.3px 0 #000000a9;
+}
+
+.hero-nav-right a:hover {
+  color: white;
 }
 
 .hero-categories a {
@@ -51,6 +61,15 @@
     0.3px -0.3px 0 #000000aa,
     -0.3px 0.3px 0 #000000a9;
   padding-bottom: 15px;
+}
+
+.hero-categories a {
+  color: #fff; /* eller din normale farve */
+  transition: color 0.2s ease;
+}
+
+.hero-categories a:hover {
+  color: rgb(177, 206, 255);
 }
 
 .aboutHero {
@@ -81,4 +100,8 @@ img.aboutHero {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+}
+
+.titleRow h1 {
+  color: rgb(177, 206, 255);
 }
