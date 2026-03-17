@@ -39,7 +39,7 @@
   color: rgb(177, 206, 255);
   text-decoration: none;
   transition: color 0.2s ease;
-    text-shadow:
+  text-shadow:
     0.3px 0.3px 0 #000000b6,
     -0.3px -0.3px 0 #000000a0,
     0.3px -0.3px 0 #000000aa,
@@ -90,11 +90,12 @@ img.aboutHero {
 .indexabout {
   margin: 50px auto;
   padding: 50px;
-  width: 85%;
+  width: 80%;
 }
 
 .blåsofa img {
-  max-width: 70%;
+  max-width: 75%;
+  margin-top: -50px;
 }
 .blåsofa {
   display: flex;
