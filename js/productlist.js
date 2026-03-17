@@ -1,4 +1,5 @@
 "use strict";
+const randomPastels = ["green-pastel", "yellow-pastel", "purple-pastel"];
 // console.log("HEJ FRA productlist.js", document.querySelector(".pastelhover"));
 const params = new URLSearchParams(window.location.search);
 let category = params.get("category");
@@ -59,31 +60,42 @@ function showProducts(productsArr) {
 
   overview.innerHTML = categoryLinks;
 
-  // productsArr.products.forEach((product) => {
-  //   console.log("product", product.id);
-
-  //   const newDivCarc = document.createElement("div");
-  //   newDivCarc.classList.add("card", "pastelhover");
-  //   newDivCarc.innerHTML += `
-  //             <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
-  //             <p class="price">${product.price},- DKK </p>
-  //             <p class="productInfo">${product.title}</p>
-  //             <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
-
-  //     `;
-  //   productContainer.appendChild(newDivCarc);
-  // });
-
   productsArr.products.forEach((product) => {
     console.log("product", product.id);
-    productContainer.innerHTML += `
-            <div class="card pastelhover">
+
+    const newDivCarc = document.createElement("div");
+    newDivCarc.addEventListener("mouseover", (evt) => {
+      const element = evt.currentTarget;
+      console.log("OVER", element);
+      element.classList.remove(...randomPastels);
+      const randomIndex = Math.floor(Math.random() * randomPastels.length);
+      const randomPastel = randomPastels[randomIndex];
+      element.classList.add(randomPastel);
+    });
+
+    newDivCarc.classList.add("card", "pastelhover");
+    newDivCarc.innerHTML += `
               <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
               <p class="price">${product.price},- DKK </p>
               <p class="productInfo">${product.title}</p>
               <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
-            </div>
 
       `;
+    productContainer.appendChild(newDivCarc);
   });
+
+  // productsArr.products.forEach((product) => {
+  //   console.log("product", product.id);
+  //   productContainer.innerHTML += `
+  //           <div class="card pastelhover">
+  //             <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
+  //             <p class="price">${product.price},- DKK </p>
+  //             <p class="productInfo">${product.title}</p>
+  //             <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
+  //           </div>
+
+  //     `;
+
+  // });
+  console.log("HEJ FRA productlist.js", document.querySelector(".pastelhover"));
 }
