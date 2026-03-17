@@ -6,6 +6,12 @@ og hvordan de interagerer med hinanden. */
   gap: 20px;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .categoryTitle {
   display: grid;
   grid-template-columns: 3fr 1fr;
