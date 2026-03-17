@@ -68,7 +68,7 @@ main {
 
 /* article */
 main article {
-  max-width: 750px;
+  max-width: 50%;
   margin: 0 auto;
   padding: 80px;
 }
@@ -135,5 +135,10 @@ hr {
     opacity: 0;
     animation: crossfade 16s infinite;
     animation-timing-function: ease-in-out;
+  }
+  main article {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 80px;
   }
 }
