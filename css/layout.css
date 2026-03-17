@@ -34,6 +34,9 @@ og hvordan de interagerer med hinanden. */
   gap: 1rem;
   margin-bottom: 1rem;
 }
+body {
+  margin: 0;
+}
 
 @media (max-width: 770px) {
   .grid4 {
