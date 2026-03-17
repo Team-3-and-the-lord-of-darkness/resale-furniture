@@ -210,6 +210,8 @@ footer {
   &:hover {
     background-color: var(--purple-pastel);
   }
+}
+
 /* dropdown menu */
 .categories-dropdown {
   position: relative;
