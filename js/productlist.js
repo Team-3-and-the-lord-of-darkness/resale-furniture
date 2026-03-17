@@ -63,7 +63,7 @@ function showProducts(productsArr) {
     productContainer.innerHTML += `
             <div class="card pastelhover">
               <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
-              <p class="price">${product.price} DKK</p>
+              <p class="price">${product.price},- DKK </p>
               <p class="productInfo">${product.title}</p>
               <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
             </div>

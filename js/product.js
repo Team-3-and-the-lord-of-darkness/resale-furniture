@@ -3,14 +3,29 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// definer istedet productContainer med passende id/class
-const productContainer = document.querySelector("#productContainer");
+const productContainer = document.querySelector(".productContainer");
 
-fetch(`https://dummyjson.com/products?category=${id}`)
+fetch(`https://dummyjson.com/products/${id}`)
   .then((response) => response.json())
-  .then((data) => {
+  .then((id) => {
     // indsæt evt andet navn end productcontainer og indsæt html
-    productContainer.innerHTML = ``;
+    productContainer.innerHTML = `
+    <section class="grid2">
+          <div>
+            <img src="${id.thumbnail}" alt="" />
+          </div>
+          <div>
+            <h1>${id.title}</h1>
+            <h1>${id.price}</h1>
+            <p class="discountPercentage">${id.discountPercentage}%</p>
+            <button class="buy pastelhover"><h1>[add to cart]</h1></button>
+          </div>
+        </section>
+        <section class="infoSection">
+          <h1>${id.brand}</h1>
+          <p>${id.description}</p>
+          <p>${id.dimensions}</p>
+        </section>`;
   });
 //   .then((response) => response.json())
 //   .then((data) => {
@@ -18,7 +33,7 @@ fetch(`https://dummyjson.com/products?category=${id}`)
 //   });
 
 // hvis vi vil have en tilbage-knap, skal der indsætter id/class
-document.querySelector("").addEventListener("click", goBack);
-function goBack() {
-  history.back();
-}
+// document.querySelector("").addEventListener("click", goBack);
+// function goBack() {
+//   history.back();
+// }
