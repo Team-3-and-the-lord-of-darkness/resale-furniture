@@ -58,3 +58,10 @@
     background-color: var(--purple-pastel);
   }
 }
+
+@media (max-width: 770px) {
+  .productContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
