@@ -1,4 +1,5 @@
 "use strict";
+// console.log("HEJ FRA productlist.js", document.querySelector(".pastelhover"));
 const params = new URLSearchParams(window.location.search);
 let category = params.get("category");
 
@@ -58,6 +59,21 @@ function showProducts(productsArr) {
 
   overview.innerHTML = categoryLinks;
 
+  // productsArr.products.forEach((product) => {
+  //   console.log("product", product.id);
+
+  //   const newDivCarc = document.createElement("div");
+  //   newDivCarc.classList.add("card", "pastelhover");
+  //   newDivCarc.innerHTML += `
+  //             <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
+  //             <p class="price">${product.price},- DKK </p>
+  //             <p class="productInfo">${product.title}</p>
+  //             <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
+
+  //     `;
+  //   productContainer.appendChild(newDivCarc);
+  // });
+
   productsArr.products.forEach((product) => {
     console.log("product", product.id);
     productContainer.innerHTML += `
@@ -67,7 +83,7 @@ function showProducts(productsArr) {
               <p class="productInfo">${product.title}</p>
               <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
             </div>
-      
+
       `;
   });
 }

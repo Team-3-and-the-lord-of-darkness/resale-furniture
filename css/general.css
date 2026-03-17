@@ -190,3 +190,24 @@ footer {
   color: var(--p-color);
   margin: 0;
 }
+
+.green-pastel {
+  transition: 0.4s;
+  &:hover {
+    background-color: var(--green-pastel);
+  }
+}
+
+.yellow-pastel {
+  transition: 0.4s;
+  &:hover {
+    background-color: var(--yellow-pastel);
+  }
+}
+
+.purple-pastel {
+  transition: 0.4s;
+  &:hover {
+    background-color: var(--purple-pastel);
+  }
+}
