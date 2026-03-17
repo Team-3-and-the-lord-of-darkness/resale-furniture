@@ -1,4 +1,5 @@
 "use strict";
+// console.log("HEJ FRA productlist.js", document.querySelector(".pastelhover"));
 const params = new URLSearchParams(window.location.search);
 let category = params.get("category");
 
@@ -7,11 +8,11 @@ let heroImage = document.querySelector("#heroImage");
 let overview = document.querySelector(".overview");
 
 if (category === "womens-dresses" || category === "womens-shoes" || category === "womens-watches") {
-  heroImage.src = "../img/womenswearhero.webp";
+  heroImage.src = "../img/womensapparelheroV2.webp";
 } else if (category === "mens-shirts" || category === "mens-shoes" || category === "mens-watches") {
-  heroImage.src = "../img/menswearhero.webp";
+  heroImage.src = "../img/mensapparelheroV2.webp";
 } else if (category === "furniture") {
-  heroImage.src = "../img/homeinteriorhero.webp";
+  heroImage.src = "../img/homeheroV2.webp";
 }
 
 //======================================================================================================================
@@ -58,16 +59,31 @@ function showProducts(productsArr) {
 
   overview.innerHTML = categoryLinks;
 
+  // productsArr.products.forEach((product) => {
+  //   console.log("product", product.id);
+
+  //   const newDivCarc = document.createElement("div");
+  //   newDivCarc.classList.add("card", "pastelhover");
+  //   newDivCarc.innerHTML += `
+  //             <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
+  //             <p class="price">${product.price},- DKK </p>
+  //             <p class="productInfo">${product.title}</p>
+  //             <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
+
+  //     `;
+  //   productContainer.appendChild(newDivCarc);
+  // });
+
   productsArr.products.forEach((product) => {
     console.log("product", product.id);
     productContainer.innerHTML += `
             <div class="card pastelhover">
               <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
-              <p class="price">${product.price} DKK</p>
+              <p class="price">${product.price},- DKK </p>
               <p class="productInfo">${product.title}</p>
               <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
             </div>
-      
+
       `;
   });
 }

@@ -14,6 +14,13 @@ h1 {
   margin: 0.5rem 3rem 3rem 3rem;
 }
 
+.discountPercentage {
+  opacity: 0.8;
+  font-size: var(--h2-size);
+  margin-left: 2rem;
+  font-style: italic;
+}
+
 .green-pastel {
   transition: 0.4s;
   &:hover {

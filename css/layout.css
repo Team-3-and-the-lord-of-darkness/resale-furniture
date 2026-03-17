@@ -6,6 +6,12 @@ og hvordan de interagerer med hinanden. */
   gap: 20px;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .categoryTitle {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -31,4 +37,78 @@ og hvordan de interagerer med hinanden. */
 
 body {
   margin: 0;
+@media (max-width: 770px) {
+  .grid4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .categoryTitle {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .hero {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 123 */
+  }
+
+  .subcategoryLinks {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .grid2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+  }
+  .hero-categories a {
+    font-size: 50px;
+    font-family: var(--h3-font);
+    color: #fff;
+    text-decoration: none;
+    text-shadow:
+      0.3px 0.3px 0 #000000b6,
+      -0.3px -0.3px 0 #000000a0,
+      0.3px -0.3px 0 #000000aa,
+      -0.3px 0.3px 0 #000000a9;
+    padding-bottom: 15px;
+  }
+  .hero-nav-right a {
+    font-size: 50px;
+    font-family: var(--h3-font);
+    color: #a8d9ff;
+    text-decoration: none;
+    text-shadow:
+      0.2px 0.2px 0 #ffffff,
+      -0.2px -0.2px 0 #ffffff,
+      0.2px -0.2px 0 #ffffff,
+      -0.2px 0.2px 0 #ffffff;
+  }
+  img.aboutHero {
+    max-width: 100%;
+    justify-content: center;
+    place-content: center;
+  }
+  .card {
+    max-width: 100%;
+    justify-self: center;
+    place-content: center;
+  }
 }
