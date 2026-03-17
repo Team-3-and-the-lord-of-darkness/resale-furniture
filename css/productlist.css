@@ -1,7 +1,7 @@
 /* Denne side er til  css specifikt til productlist-siden*/
 .card {
-  width: 270px;
-  padding: 5px;
+  padding: 60px;
+  padding-top: 0px;
 }
 
 .productContainer {
@@ -11,7 +11,6 @@
 
 #heroImage {
   width: 100%;
-  margin: 0.5rem;
 }
 
 .card img {
@@ -64,4 +63,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+.subcategoryLinks {
+  display: flex;
+  gap: 32px;
+  padding: 20px 40px;
+}
+
+.subcategoryLinks a {
+  font-size: var(--p-size);
+  font-family: var(--p-font);
+  color: var(--p-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.subcategoryLinks a:hover {
+  border-bottom: 1px solid #000;
 }
