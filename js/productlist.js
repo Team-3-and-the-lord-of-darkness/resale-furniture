@@ -8,11 +8,11 @@ let heroImage = document.querySelector("#heroImage");
 let overview = document.querySelector(".overview");
 
 if (category === "womens-dresses" || category === "womens-shoes" || category === "womens-watches") {
-  heroImage.src = "../img/womenswearhero.webp";
+  heroImage.src = "../img/womensapparelheroV2.webp";
 } else if (category === "mens-shirts" || category === "mens-shoes" || category === "mens-watches") {
-  heroImage.src = "../img/menswearhero.webp";
+  heroImage.src = "../img/mensapparelheroV2.webp";
 } else if (category === "furniture") {
-  heroImage.src = "../img/homeinteriorhero.webp";
+  heroImage.src = "../img/homeheroV2.webp";
 }
 
 //======================================================================================================================
