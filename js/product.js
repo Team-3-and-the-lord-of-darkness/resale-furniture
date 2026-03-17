@@ -16,8 +16,8 @@ fetch(`https://dummyjson.com/products/${id}`)
           </div>
           <div>
             <h1>${id.title}</h1>
-            <h1>${id.price}</h1>
-            <p class="discountPercentage">${id.discountPercentage}%</p>
+            <h1>${id.price},- DKK</h1>
+            <p class="discountPercentage">Save ${id.discountPercentage}%</p>
             <button class="buy pastelhover"><h1>[add to cart]</h1></button>
           </div>
         </section>
