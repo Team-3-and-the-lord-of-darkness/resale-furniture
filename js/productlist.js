@@ -39,8 +39,16 @@ function showProducts(productsArr) {
   productsArr.products.forEach((product) => {
     console.log("product", product.id);
 
-    productContainer.innerHTML += `
+    if (category === "womens-dresses" || category === "womens-shoes" || category === "womens-watches") {
+      productContainer.innerHTML = `
+  <a href=></a>`;
+    } else if (category === "mens-shirts" || category === "mens-shoes" || category === "mens-watches") {
+      heroImage.src = "../img/menswearhero.webp";
+    } else if (category === "furniture") {
+      heroImage.src = "../img/homeinteriorhero.webp";
+    }
 
+    productContainer.innerHTML += `
             <div class="card pastelhover">
               <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
               <p class="price">${product.price} DKK</p>
