@@ -1,4 +1,4 @@
-/* Denne side er til  css specifikt til product-siden*/
+/* Denne side er til  css specifikt til product-siden */
 .buy {
   border: none;
 }
@@ -48,7 +48,6 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 32px 40px;
-  border-top: 1px solid #000;
 }
 
 .footer-left {
@@ -77,4 +76,36 @@ footer {
   font-family: var(--p-font);
   color: var(--p-color);
   margin: 0;
+}
+
+/* Grid layout */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 3rem 5rem; /* <-- øg dette tal for at skubbe billedet længere ind */
+  align-items: start;
+}
+
+/* Billede */
+.grid2 img {
+  width: 70%;
+  max-width: 400px; /* <-- gør dette tal større for et større billede */
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+/* Mindre tekst */
+.grid2 h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+}
+
+.grid2 button h1 {
+  font-size: 2rem;
+}
+
+.grid2 button {
+  padding: 20px;
 }
