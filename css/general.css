@@ -79,7 +79,7 @@ header nav ul li {
 }
 
 .headerText:hover {
-  text-decoration: underline;
+  color: rgb(177, 206, 255);
 }
 .header-icon {
   color: var(--p-color);
@@ -135,11 +135,9 @@ header nav ul li {
   border: none;
   padding: 0;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.headerText:hover {
-  text-decoration: underline;
-}
 .header-icon {
   color: var(--p-color);
   display: flex;
@@ -160,8 +158,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 32px 40px;
-  background-color: rgb(177, 206, 255);
+  padding: 80px 50px; /* øg dette tal for endnu højere footer */
+  background-image: url("../img/indexheroV3.webp");
+  background-size: cover;
+  background-position: center bottom;
 }
 
 .footer-left {
@@ -171,14 +171,20 @@ footer {
 }
 
 .footer-link {
-  font-size: var(--p-size);
+  font-size: var(--h2-size);
   font-family: var(--p-font);
   color: white;
   text-decoration: none;
 }
 
+.footer-link,
+.footer-copy,
+.footerlogo {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
 .footer-link:hover {
-  text-decoration: underline;
+  color: rgb(177, 206, 255);
 }
 
 .footer-about {
@@ -186,7 +192,7 @@ footer {
 }
 
 .footer-copy {
-  font-size: var(--p-size);
+  font-size: var(--h4-size);
   font-family: var(--p-font);
   color: white;
   margin: 0;
@@ -245,12 +251,13 @@ footer {
   font-family: var(--p-font);
   color: var(--p-color);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .dropdown-menu a:hover {
-  text-decoration: underline;
+  color: rgb(177, 206, 255);
 }
 
 .footerlogo {
-  max-width: 150px;
+  max-width: 200px;
 }

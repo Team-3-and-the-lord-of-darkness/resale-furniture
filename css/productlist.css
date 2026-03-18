@@ -69,7 +69,7 @@
 }
 
 .subcategoryLinks a:hover {
-  border-bottom-color: #000; /* skifter kun farven */
+  color: rgb(177, 206, 255);
 }
 @media (max-width: 770px) {
   .productContainer {
