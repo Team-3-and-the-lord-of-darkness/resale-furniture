@@ -76,7 +76,7 @@ function showProducts(productsArr) {
     newDivCarc.classList.add("card", "pastelhover");
     newDivCarc.innerHTML += `
               <img src="${product.thumbnail}" alt="blå sofa med hvid baggrund" />
-              <p class="price">${product.price},- DKK </p>
+              <p class="price">${Math.ceil(product.price * 10)},- DKK </p>
               <p class="productInfo">${product.title}</p>
               <a class="showMore" href="product.html?id=${product.id}">Vis mere</a>
 
